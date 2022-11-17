@@ -9,8 +9,11 @@ body {
 }
 
 .main {
-  max-width: 300px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 form {
@@ -19,6 +22,7 @@ form {
   padding: 8px;
   display: flex;
   align-items: center;
+  width: 40%;
 }
 
 form input[type="text"] {
