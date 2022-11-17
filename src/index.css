@@ -8,5 +8,6 @@ body {
   color: #aaa;
 }
 form input[type="text"] {
-  background-color: transparent;
+  background: none;
+  border: 1px solid #30313d;
 }
