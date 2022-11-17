@@ -1,15 +1,10 @@
 import React from "react";
-import { BsFillSquareFill, BsFillCheckSquareFill } from "react-icons/bs";
+import Checkbox from "./Checkbox";
 
 const Task = () => {
   return (
     <div className="task">
-      <div className="checkbox unchecked">
-        <BsFillSquareFill />
-      </div>
-      <div className="checkbox checked">
-        <BsFillCheckSquareFill />
-      </div>
+      <Checkbox />
       task task
     </div>
   );
