@@ -7,7 +7,7 @@ function App() {
 
   const addTask = (name) => {
     setTasks((value) => {
-      return [...value, { name: name, done: false }];
+      return [...value, { name: name, done: false }]
     });
   };
 
