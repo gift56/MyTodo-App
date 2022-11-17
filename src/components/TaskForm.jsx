@@ -4,7 +4,7 @@ const TaskForm = ({ onAdd }) => {
   const [taskValue, setTaskValue] = useState("");
 
   return (
-    <form>
+    <form onSubmit={(e) => onAdd(taskValue)}>
       <button>+</button>
       <input
         type="text"
