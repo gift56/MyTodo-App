@@ -7,11 +7,18 @@ body {
   background-color: #17181f;
   color: #aaa;
 }
-form input[type="text"] {
-  background: none;
+
+form {
   border: 3px solid #30313d;
   border-radius: 10px;
+  padding-left: 8px;
+}
+
+form input[type="text"] {
+  background: none;
+  border: none;
   padding: 5px 8px;
+  width: 100%;
 }
 form button {
   background-color: #61dafb;
