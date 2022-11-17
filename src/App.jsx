@@ -22,7 +22,14 @@ function App() {
     setTasks(tasks);
   }, []);
 
-  const updateTaksDone = (id, done) => {};
+  const updateTaksDone = (id, updateDone) => {
+    setTasks((prev) => {
+      const newTasks = [...prev];
+      newTasks[id].done = updateDone;
+
+      return newTasks;
+    });
+  };
 
   return (
     <div className="main">
