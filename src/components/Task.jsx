@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Task = () => {
   return (
-    <div>Task</div>
-  )
-}
+    <div>
+      <input type="checkbox" />
+      task task
+    </div>
+  );
+};
 
-export default Task
+export default Task;
