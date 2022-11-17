@@ -32,11 +32,16 @@ function App() {
 
   const numberComplete = tasks.filter((task) => task.done).length;
 
+  const getMessage = () => {
+    return "Keep it going ";
+  };
+
   return (
     <div className="main">
       <h1>
         {numberComplete}/{tasks.length}
       </h1>
+      <h2>{getMessage()}</h2>
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
         <Task {...task} onToggle={(done) => updateTaksDone(i, done)} />
