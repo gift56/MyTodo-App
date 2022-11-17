@@ -34,6 +34,13 @@ function App() {
 
   const getMessage = () => {
     const percentage = (numberComplete / tasks.length) * 100;
+
+    if (percentage === 0) {
+      return "Try to make at least one! 😢";
+    }
+    if (percentage === 100) {
+      return "Nice job for today! 👍";
+    }
     return "Keep it going 💪";
   };
 

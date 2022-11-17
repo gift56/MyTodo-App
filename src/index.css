@@ -62,7 +62,9 @@ form button {
 .task span {
   position: relative;
 }
-
+.taskName {
+  flex-grow: 1;
+}
 .task span::before {
   content: "";
   display: block;
