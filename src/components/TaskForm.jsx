@@ -4,7 +4,12 @@ const TaskForm = ({ onAdd }) => {
   const [taskValue, setTaskValue] = useState("");
 
   return (
-    <form onSubmit={(e) => onAdd(taskValue)}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onAdd(taskValue);
+      }}
+    >
       <button>+</button>
       <input
         type="text"

@@ -7,14 +7,16 @@ function App() {
 
   const addTask = (name) => {
     setTasks((value) => {
-      return [...value, { name: name, done: false }]
+      return [...value, { name: name, done: false }];
     });
   };
 
   return (
     <div className="main">
       <TaskForm onAdd={addTask} />
-      <Task />
+      {tasks.map((task, i) => (
+        <Task key={i} />
+      ))}
     </div>
   );
 }
