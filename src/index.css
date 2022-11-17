@@ -58,7 +58,6 @@ form button {
 }
 .done {
   opacity: 0.5;
-  text-decoration: line-through;
 }
 .task span {
   position: relative;
@@ -72,6 +71,7 @@ form button {
   background-color: #ddd;
   position: absolute;
   top: 10px;
+  transition: all 100ms ease;
 }
 .done span::before {
   width: 100%;
