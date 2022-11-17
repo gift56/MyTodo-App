@@ -5,7 +5,9 @@ import TaskForm from "./components/TaskForm";
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const addTask = () => {};
+  const addTask = (name) => {
+    
+  };
 
   return (
     <div className="main">
