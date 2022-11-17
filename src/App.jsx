@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Task from "./components/Task";
 import TaskForm from "./components/TaskForm";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    
+  
+  }, [tasks])
 
   const addTask = (name) => {
     setTasks((value) => {
