@@ -12,6 +12,8 @@ form {
   border: 3px solid #30313d;
   border-radius: 10px;
   padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
 
 form input[type="text"] {
@@ -23,4 +25,6 @@ form input[type="text"] {
 form button {
   background-color: #61dafb;
   border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
