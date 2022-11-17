@@ -47,7 +47,7 @@ function App() {
     if (percentage === 100) {
       return "Nice job for today! 👍";
     }
-    return "Keep it going 💪";
+    return "Nice ! Keep it going 💪";
   };
 
   const renameTask = (id, newName) => {
