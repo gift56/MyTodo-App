@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 1rem;
 }
 
 form {
@@ -41,4 +42,7 @@ form button {
 }
 .task {
   width: 40%;
+  background-color: #30313d;
+  border-radius: 10px;
+  padding: 8px;
 }
