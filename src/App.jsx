@@ -33,7 +33,7 @@ function App() {
   const numberComplete = tasks.filter((task) => task.done).length;
 
   const getMessage = () => {
-    return "Keep it going ";
+    return "Keep it going 💪";
   };
 
   return (
