@@ -7,3 +7,6 @@ body {
   background-color: #17181f;
   color: #aaa;
 }
+form input[type="text"] {
+  background-color: transparent;
+}
