@@ -67,6 +67,7 @@ function App() {
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
         <Task
+          key={i}
           {...task}
           onToggle={(done) => updateTaksDone(i, done)}
           onDelete={() => deleteTasks(i)}
