@@ -32,6 +32,7 @@ function App() {
 
   return (
     <div className="main">
+      <h1>0/10</h1>
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
         <Task {...task} onToggle={(done) => updateTaksDone(i, done)} />
