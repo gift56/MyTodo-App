@@ -36,13 +36,14 @@ form input[type="text"] {
   width: 100%;
   outline: none;
   color: #fff;
+  font-size: 16px;
 }
 form button {
   background-color: #61dafb;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  padding: 5px 8px;
+  padding: 6px 10px;
 }
 .task {
   width: 40%;
