@@ -48,10 +48,14 @@ form button {
   padding: 8px 10px;
   display: flex;
   align-items: center;
+  transition: all 500ms ease;
 }
 .task svg {
   width: 20px;
   height: 20px;
   margin-right: 10px;
   color: #61dafb;
+}
+.done {
+  opacity: 0.5;
 }
