@@ -1,9 +1,12 @@
 import React from "react";
+import { BsFillSquareFill } from "react-icons/bs";
 
 const Task = () => {
   return (
     <div className="task">
-      <input type="checkbox" />
+      <div className="checkbox">
+        <BsFillSquareFill />
+      </div>
       task task
     </div>
   );
