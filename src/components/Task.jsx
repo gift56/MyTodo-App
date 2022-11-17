@@ -7,6 +7,9 @@ const Task = () => {
       <div className="checkbox unchecked">
         <BsFillSquareFill />
       </div>
+      <div className="checkbox checked">
+        <BsFillCheckSquareFill />
+      </div>
       task task
     </div>
   );
