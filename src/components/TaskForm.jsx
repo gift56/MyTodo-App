@@ -8,6 +8,7 @@ const TaskForm = ({ onAdd }) => {
       onSubmit={(e) => {
         e.preventDefault();
         onAdd(taskValue);
+        setTaskValue("");
       }}
     >
       <button>+</button>

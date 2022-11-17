@@ -15,7 +15,7 @@ function App() {
     <div className="main">
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
-        <Task key={i} />
+        <Task key={i} {...task} />
       ))}
     </div>
   );
