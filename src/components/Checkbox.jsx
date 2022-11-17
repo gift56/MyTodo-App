@@ -2,7 +2,9 @@ import React from 'react'
 
 const Checkbox = () => {
   return (
-    <div>Checkbox</div>
+    <div>
+        
+    </div>
   )
 }
 
