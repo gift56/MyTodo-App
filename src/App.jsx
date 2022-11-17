@@ -33,6 +33,7 @@ function App() {
   const numberComplete = tasks.filter((task) => task.done).length;
 
   const getMessage = () => {
+    const percentage = (numberComplete / tasks.length) * 100;
     return "Keep it going 💪";
   };
 
