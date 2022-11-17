@@ -6,7 +6,8 @@ function App() {
     <div>
       <TaskForm />
       <Task />
-      
+      <Task />
+      <Task />
     </div>
   );
 }
