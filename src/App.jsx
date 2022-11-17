@@ -30,6 +30,12 @@ function App() {
     });
   };
 
+  const deleteTasks = (id) => {
+    setTasks((prev) => {
+      return prev.filter((task, i) => i !== id);
+    });
+  };
+
   const numberComplete = tasks.filter((task) => task.done).length;
 
   const getMessage = () => {
@@ -52,7 +58,11 @@ function App() {
       <h2>{getMessage()}</h2>
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
-        <Task {...task} onToggle={(done) => updateTaksDone(i, done)} />
+        <Task
+          {...task}
+          onToggle={(done) => updateTaksDone(i, done)}
+          onDelete={() => deleteTasks(i)}
+        />
       ))}
     </div>
   );

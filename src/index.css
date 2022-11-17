@@ -78,3 +78,14 @@ form button {
 .done span::before {
   width: 100%;
 }
+.trash {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trash svg {
+  color: #c2baba;
+}
