@@ -39,3 +39,6 @@ form button {
   cursor: pointer;
   padding: 5px 8px;
 }
+.task {
+  width: 40%;
+}
