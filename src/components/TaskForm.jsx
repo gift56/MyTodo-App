@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TaskForm = () => {
+const TaskForm = ({ onAdd }) => {
   const [taskValue, setTaskValue] = useState("");
 
   return (
