@@ -4,7 +4,7 @@ import Checkbox from "./Checkbox";
 const Task = ({ name, done }) => {
   return (
     <div className="task">
-      <Checkbox defaultChecked={done} />
+      <Checkbox checked={done} onClick={() => alert("Fucked Up")} />
       {name}
     </div>
   );

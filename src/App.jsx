@@ -22,11 +22,13 @@ function App() {
     setTasks(tasks);
   }, []);
 
+  const updateTaksDone = (id, done) => {};
+
   return (
     <div className="main">
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
-        <Task key={i} {...task} />
+        <Task key={i} {...task} onToggle={() => updateTaksDone(i, done)} />
       ))}
     </div>
   );

@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsFillSquareFill, BsFillCheckSquareFill } from "react-icons/bs";
 
-const Checkbox = ({ defaultChecked = false }) => {
-  const [checked, setChecked] = useState(defaultChecked);
-
+const Checkbox = ({ checked = false, onClick }) => {
   return (
-    <div>
+    <div onClick={onClick}>
       {!checked && (
         <div className="checkbox unchecked">
           <BsFillSquareFill />
