@@ -1,11 +1,11 @@
 import React from "react";
 import Checkbox from "./Checkbox";
 
-const Task = () => {
+const Task = ({ name, done }) => {
   return (
     <div className="task">
-      <Checkbox defaultChecked={true} />
-      task task
+      <Checkbox defaultChecked={done} />
+      {name}
     </div>
   );
 };
