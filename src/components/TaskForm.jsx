@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const TaskForm = () => {
-  const [value, setValue] = useState("");
-  
+  const [taskValue, setTaskValue] = useState("");
+
   return (
     <form>
       <button>+</button>
-      <input type="text" placeholder="Your next task..." />
+      <input type="text" value={taskValue} placeholder="Your next task..." />
     </form>
   );
 };
