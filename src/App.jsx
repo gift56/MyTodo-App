@@ -30,9 +30,13 @@ function App() {
     });
   };
 
+  const numberComplete = tasks.filter((task) => task.done).length;
+
   return (
     <div className="main">
-      <h1>0/10</h1>
+      <h1>
+        {numberComplete}/{tasks.length}
+      </h1>
       <TaskForm onAdd={addTask} />
       {tasks.map((task, i) => (
         <Task {...task} onToggle={(done) => updateTaksDone(i, done)} />
