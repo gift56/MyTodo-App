@@ -6,9 +6,8 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    
-  
-  }, [tasks])
+    localStorage.setItem("tasks", tasks);
+  }, [tasks]);
 
   const addTask = (name) => {
     setTasks((value) => {
