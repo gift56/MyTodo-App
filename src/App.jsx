@@ -3,7 +3,7 @@ import TaskForm from "./components/TaskForm";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <TaskForm />
       <Task />
       <Task />

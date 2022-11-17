@@ -8,6 +8,11 @@ body {
   color: #aaa;
 }
 
+.main {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 form {
   border: 3px solid #30313d;
   border-radius: 10px;
