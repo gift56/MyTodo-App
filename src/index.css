@@ -60,10 +60,19 @@ form button {
   opacity: 0.5;
   text-decoration: line-through;
 }
+.task span {
+  position: relative;
+}
+
 .task span::before {
   content: "";
   display: block;
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 1.5px;
   background-color: #ddd;
+  position: absolute;
+  top: 10px;
+}
+.done span::before {
+  width: 100%;
 }
