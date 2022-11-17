@@ -50,6 +50,14 @@ function App() {
     return "Keep it going 💪";
   };
 
+  const renameTask = (id, newName) => {
+    setTasks((prev) => {
+      const newTaskName = [...prev];
+      newTaskName[id].name = newName;
+      return newTaskName;
+    });
+  };
+
   return (
     <div className="main">
       <h1>
@@ -62,6 +70,7 @@ function App() {
           {...task}
           onToggle={(done) => updateTaksDone(i, done)}
           onDelete={() => deleteTasks(i)}
+          onRename={(newName) => renameTask(i, newName)}
         />
       ))}
     </div>

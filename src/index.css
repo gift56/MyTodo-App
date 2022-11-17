@@ -62,7 +62,8 @@ form button {
 .task span {
   position: relative;
 }
-.taskName {
+.taskName,
+.editForm {
   flex-grow: 1;
 }
 .task span::before {
@@ -88,4 +89,9 @@ form button {
 }
 .trash svg {
   color: #c2baba;
+}
+.task input {
+  border: 2px solid #777;
+  border-radius: 5px;
+  padding: 0px 4px;
 }
