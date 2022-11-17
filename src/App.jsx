@@ -6,6 +6,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
+    if (tasks.length === 0) return;
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
@@ -17,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const tasks = JSON.parse(localStorage.getItem("tasks"));
-    
+
     setTasks(tasks);
   }, []);
 
