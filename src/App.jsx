@@ -1,7 +1,10 @@
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <form>
+        <button>+</button>
+        <input type="text" />
+      </form>
     </div>
   );
 }
