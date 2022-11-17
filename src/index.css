@@ -11,7 +11,7 @@ body {
 form {
   border: 3px solid #30313d;
   border-radius: 10px;
-  padding-left: 8px;
+  padding: 8px;
   display: flex;
   align-items: center;
 }
@@ -19,12 +19,14 @@ form {
 form input[type="text"] {
   background: none;
   border: none;
-  padding: 5px 8px;
+  padding: 0px 8px;
   width: 100%;
+  outline: none;
 }
 form button {
   background-color: #61dafb;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  padding: 5px 8px;
 }
