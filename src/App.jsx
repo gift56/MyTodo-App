@@ -15,6 +15,12 @@ function App() {
     });
   };
 
+  useEffect(() => {
+    const tasks = JSON.parse(localStorage.getItem("tasks"));
+    
+    setTasks(tasks);
+  }, []);
+
   return (
     <div className="main">
       <TaskForm onAdd={addTask} />
