@@ -45,6 +45,8 @@ form button {
   background-color: #30313d;
   border-radius: 10px;
   padding: 8px;
+  display: flex;
+  align-items: center;
 }
 .task svg {
   width: 20px;
