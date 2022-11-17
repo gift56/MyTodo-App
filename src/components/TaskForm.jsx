@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const TaskForm = () => {
   return (
-    <div>TaskForm</div>
-  )
-}
+    <form>
+      <button>+</button>
+      <input type="text" />
+    </form>
+  );
+};
 
-export default TaskForm
+export default TaskForm;

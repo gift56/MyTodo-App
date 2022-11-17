@@ -1,10 +1,9 @@
+import TaskForm from "./components/TaskForm";
+
 function App() {
   return (
     <div>
-      <form>
-        <button>+</button>
-        <input type="text" />
-      </form>
+      <TaskForm />
     </div>
   );
 }
