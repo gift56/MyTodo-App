@@ -6,8 +6,6 @@ function App() {
     <div className="main">
       <TaskForm />
       <Task />
-      <Task />
-      <Task />
     </div>
   );
 }
