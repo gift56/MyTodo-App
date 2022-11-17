@@ -3,10 +3,11 @@ import Task from "./components/Task";
 import TaskForm from "./components/TaskForm";
 
 function App() {
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState([]);
+
   return (
     <div className="main">
-      <TaskForm />
+      <TaskForm onAdd={taskName} />
       <Task />
     </div>
   );
