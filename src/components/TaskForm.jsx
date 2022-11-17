@@ -6,7 +6,12 @@ const TaskForm = () => {
   return (
     <form>
       <button>+</button>
-      <input type="text" value={taskValue} placeholder="Your next task..." />
+      <input
+        type="text"
+        value={taskValue}
+        onChange={(e) => setTaskValue(e.target.value)}
+        placeholder="Your next task..."
+      />
     </form>
   );
 };
