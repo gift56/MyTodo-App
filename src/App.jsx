@@ -57,6 +57,7 @@ function App() {
       return newTaskName;
     });
   };
+  
 
   return (
     <div className="main">
