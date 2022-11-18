@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Vite Create React App](https://vitejs.dev/guide/).
 
-Open [MyTodoApp]() to preview the update.
+Open [MyTodoApp](freetodoapp.netlify.app) to preview the update.
 
 ## Available Scripts
 
