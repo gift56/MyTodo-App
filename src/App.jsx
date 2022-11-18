@@ -29,7 +29,6 @@ function App() {
       return newTasks;
     });
   };
-
   const deleteTasks = (id) => {
     setTasks((prev) => {
       return prev.filter((task, i) => i !== id);
@@ -57,7 +56,7 @@ function App() {
       return newTaskName;
     });
   };
-  
+
 
   return (
     <div className="main">
